@@ -1,25 +1,25 @@
 format = """\
-[](bg:#030B16 fg:#7DF9AA)\
-[󰀵 ](bg:#7DF9AA fg:#090c0c)\
-[](fg:#7DF9AA bg:#1C3A5E)\
+[](bg:#030B16 fg:#7DF9AA)\
+[](bg:#7DF9AA fg:#090c0c)\
+[](fg:#7DF9AA bg:#1C3A5E)\
 $time\
-[](fg:#1C3A5E bg:#3B76F0)\
+[](fg:#1C3A5E bg:#3B76F0)\
 $directory\
-[](fg:#3B76F0 bg:#FCF392)\
+[](fg:#3B76F0 bg:#FCF392)\
 $git_branch\
 $git_status\
 $git_metrics\
-[](fg:#FCF392 bg:#030B16)\
+[](fg:#FCF392 bg:#030B16)\
 $character\
 """
 
 [directory]
-format = "[ ﱮ $path ]($style)"
+format = "[ 📁 $path ]($style)"
 style = "fg:#E4E4E4 bg:#3B76F0"
 
 [git_branch]
-format = '[ $symbol$branch(:$remote_branch) ]($style)'
-symbol = "  "
+format = '[ 💎 $symbol$branch(:$remote_branch) ]($style)'
+symbol = " "
 style = "fg:#1C3A5E bg:#FCF392"
 
 [git_status]
@@ -34,10 +34,10 @@ disabled = false
 
 [hg_branch]
 format = "[ $symbol$branch ]($style)"
-symbol = " "
+symbol = ""
 
 [cmd_duration]
-format = "[  $duration ]($style)"
+format = "[ $duration ]($style)"
 style = "fg:bright-white bg:18"
 
 [character]
@@ -48,4 +48,4 @@ error_symbol = '[ ✗](#E84D44) '
 disabled = false
 time_format = "%R" # Hour:Minute Format
 style = "bg:#1d2230"
-format = '[[ 󱑍 $time ](bg:#1C3A5E fg:#8DFBD2)]($style)'
+format = '[[ 🕗 $time ](bg:#1C3A5E fg:#8DFBD2)]($style)'
